@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark py-1" id="main-nav">
+  <!-- fixed-top -->
+  <div class="container">
+    <a [routerLink]="'main'" class="navbar-brand">Social Network</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#collapsibleNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a [routerLink]="'search'" class="nav-link"
+            ><i class="fa fa-search" aria-hidden="true"
+              ><span>&nbsp;&nbsp;</span></i
+            >People</a
+          >
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="'signup'" class="nav-link">Signup</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="'login'" href="#login" class="nav-link">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
